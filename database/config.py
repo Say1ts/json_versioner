@@ -1,0 +1,8 @@
+SCYLLA_HOST = ['localhost']
+SCYLLA_PORT = '9046'
+SCYLLA_KEYSPACE = 'dev'
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = '6379'
+REDIS_DB = 0
