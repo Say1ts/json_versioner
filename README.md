@@ -7,7 +7,6 @@ The microservice allows versioning of JSON objects.
 
 
 ## Main Tasks
----
 The main tasks of the module are to provide the following capabilities for the user:
 
 - register REF
@@ -29,7 +28,6 @@ CONTENT is hashed, the result goes into the COMMON_HASH variable inside the prog
 Each key-value pair inside the content is also hashed and added to the CONTENT_HASHES array.
 
 ## Hashing Algorithm
----
 sha256
 To calculate the hash for two variables: key-value; two strings are concatenated, and a hash is calculated for the resulting string.
 
@@ -40,7 +38,6 @@ To calculate the hash for two variables: key-value; two strings are concatenated
 Микросервис позоволяет вести версионирование JSON-объектов.
 
 ## Основные задачи
----
 Основными задачами модуля является обеспечение следующих возможностей для пользователя:
 - регистрировать *REF*
 	- после регистрации получать обратно *ref_hash*
@@ -57,13 +54,11 @@ To calculate the hash for two variables: key-value; two strings are concatenated
 REF можно зарегистрировать отдельно от CONTENT в отдельном эндпоинте.
 
 ## Хеширование
----
 *CONTENT* хешируется, результат попадает в переменную *COMMON_HASH* внутри программы, а на выходе из программы в переменную *CONTENT_HASH*
 
 Также хешируется каждая пара ключ-значение внутри контента и добавляется в массив *CONTENT_HASHES*.
 
 ### Алгоритм хеширования
----
 **sha256**
 Для расчета хеша для двух переменных: ключ-значения; две строки конкатенируются и для результурующей строки вычисляется хеш.
 # DATABASE CONFIG
